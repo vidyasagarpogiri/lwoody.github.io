@@ -1,187 +1,207 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko"
-	xmlns:th="http://www.thymeleaf.org">
+<!doctype html>
+<html lang="ko">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Sojung & Woojae</title>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" /> -->
-<link rel="stylesheet" href="https://npmcdn.com/flickity@1.2/dist/flickity.min.css" />
-<link rel="stylesheet" type="text/css" href="static/css/wedweb.css" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<meta property="og:image" content="http://lwoody.github.io/static/images/image1.png" />
+	<meta property="og:title" content="이우재♥이소정 모바일청첩장" />
+	<meta property="og:description" content="클릭하시면 연결됩니다." />
+	<meta charset="UTF-8">
+	<meta name="Generator" content="">
+	<meta name="Author" content="">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+	/>
+	<link rel="stylesheet" href="https://npmcdn.com/flickity@1.2/dist/flickity.min.css" />
+	<link rel="stylesheet" type="text/css" href="static/css/wedweb.css" />
+	<title>이우재와 이소정의 결혼식에 초대합니다</title>
+	<style>
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+			font-weight: lighter;
+		}
+
+		h2,
+		h3,
+		h4 {
+			font-weight: lighter;
+		}
+
+		img {
+			display: block;
+			border: 0;
+		}
+
+		.wrap {
+			width: 100%;
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		.about_area {}
+
+		.about_area img {
+			width: 100%;
+			height: auto;
+		}
+
+		.gallery_area {}
+
+		.gallery_area img {
+			width: 100%;
+			height: auto;
+		}
+
+		.zoom_area {}
+
+		.zoom_area a {
+			display: block;
+		}
+
+		.zoom_area a img {
+			width: 100%;
+			height: auto;
+		}
+
+		.reabout_area {}
+
+		.reabout_area img {
+			width: 100%;
+			height: auto;
+		}
+
+		.location_area {}
+
+		.location_area img {
+			width: 100%;
+			height: auto;
+		}
+	</style>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
+
 <body>
+	<div class="wrap">
 
-	<!-- Header / Home-->
-	<header class="w3-display-container w3-wide bgimg w3-grayscale-min"
-		id="home">
-	<div class="w3-display-middle w3-text-white w3-center">
-		<h1 class="w3-jumbo">이우재<br>이소정<br>결혼식</h1>
-		<br>
-		<h2>저희 결혼합니다</h2>
-		<h2>
-			<b>2018.09.29</b>
-		</h2>
-	</div>
-	</header>
-
-	<!-- Navbar (sticky bottom) -->
-	<div class="w3-bottom w3-hide-small">
-		<div
-			class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
-			<a href="#us" style="width: 33.3%" class="w3-bar-item w3-button">Sojung & Woojae</a>
-			<a href="#rsvp"	style="width: 33.3%" class="w3-bar-item w3-button w3-hover-black">Gallery</a>
-			<a href="#wedding" style="width: 33.3%" class="w3-bar-item w3-button">About Wedding</a> 
-		</div>
-	</div>
-
-	<!-- About / Jane And John -->
-	<div class="w3-container w3-padding-64 w3-grayscale-min"
-		id="us">
-		<div class="w3-content">
-			<!-- <h1 class="w3-center w3-text-grey">
-				<b>Sojung & Woojae</b>
-			</h1>
-			<img class="w3-round" src="static/images/image13.png"
-				style="width: 100%; margin: 32px 0"> -->
-			<p class="w3-center" style="font-size: 20px;">
-				<span style="font-size:25px;color:dimgray;">더 사랑하고 싶어서 결혼합니다. </span>
-				<br>
-				<span style="color:brown">
-					<br>스무 살의 풋사랑으로 시작한 
-					<br>저희 둘,
-					<br>일곱 번의 사계절을 지나 <br>이제 영원을 약속하려 합니다.
-					<br>축복으로 격려해주시면 <br>큰 기쁨이겠습니다.
+		<!-- 소개 시작 -->
+		<div class="about_area">
+			<img src="static/images/image9.png" alt="" />
+			<div class="_about_area">
+				<span>
+					<h2 style="text-align:center; font-weight:lighter;">
+						<span style="font-weight:bold;">이</span>우재
+						<span style="font-size:15px;">그리고</span>
+						<span style="font-weight:bold;">이</span>소정</h2>
 				</span>
 				<br>
+				<span>
+					<h3 id="d_day" style="font-size:20px;"> D - </h3>
+				</span>
 				<br>
-				<span style="font-size:25px;color:dimgray;">이상철 ･ 송정원 <span style="font-size:15px;">의 차남</span> 우재</span>
-				<br>
-				<span style="font-size:25px;color:dimgray;">이영호 ･ 이남미 <span style="font-size:15px;">의 장녀</span> 소정</span>
-			</p>
+				<h3 style="font-size:15px; line-height:10%">
+					2018년 9월 29일 토요일 오전 11시
+				</h3>
+				<h3 style="font-size:15px;">
+					더 발렌티 청담 5층 채플홀
+				</h3>
+			</div>
+		</div>
+		<!-- //소개 끝 -->
+
+
+		<!-- 소개2 시작 -->
+		<div class="reabout_area" style="background-color: #f6f6f6; padding-top:100px; padding-bottom:100px;">
+			<span style="font-size:17px;color:brown;">더 사랑하고 싶어서 결혼합니다. </span>
 			<br>
-			<!-- <p class="w3-center">
-				<a href="#wedding"
-					class="w3-button w3-black w3-round w3-padding-large w3-large">Wedding
-					Details</a>
-			</p> -->
+			<span style="font-size:16px; line-height:200%; color:dimgray">
+				<br>스무 살의 풋사랑으로 시작한 저희 둘,
+				<br>일곱 번의 사계절을 지나
+				<br>이제 영원을 약속하려 합니다.
+				<br>축복으로 격려해주시면 큰 기쁨이겠습니다.
+			</span>
+			<br>
+			<br>
+			<br>
+			<span style="font-size:20px; ">이상철 ･ 송정원
+				<span style="font-size:15px;">의 차남</span> 우재</span>
+			<br>
+			<span style="font-size:20px;">이영호 ･ 이남미
+				<span style="font-size:15px;">의 장녀</span> 소정</span>
 		</div>
-	</div>
+		<!-- //소개2 끝 -->
 
-	<div class="w3-container w3-padding-35 w3-center w3-wide" id="rsvp">
-	</div>
-	
-	<!-- Flickity HTML init -->
-	<div class="carousel js-flickity flickity-enabled is-draggable" data-flickity='{ "imagesLoaded": true, "contain": true}'>
-				<div class="carousel-cell"><img class="w3-round-large "
-				src="static/images/image10.png" style="width: 375; height:667; margin:0"></div>
-				<div class="carousel-cell"><img class="w3-round-large "
-				src="static/images/image1.png" style="width: 375; height:667; margin:0"></div>
-				<div class="carousel-cell"><img class="w3-round-large "
-				src="static/images/image2.png" style="width: 375; height:667; margin:0"></div>
-				<div class="carousel-cell"><img class="w3-round-large "
-				src="static/images/image3.png" style="width: 375; height:667; margin:0"></div>
-				<div class="carousel-cell"><img class="w3-round-large "
-				src="static/images/image4.png" style="width: 375; height:667; margin:0"></div>
-				<div class="carousel-cell"><img class="w3-round-large "
-				src="static/images/image5.png" style="width: 375; height:667; margin:0"></div>
-				<div class="carousel-cell"><img class="w3-round-large "
-				src="static/images/image6.png" style="width: 375; height:667; margin:0"></div>
-				<!-- <div class="carousel-cell"><img class="w3-round-large "
-				src="/images/image7.png" style="width: 375; height:667; margin:0"></div> -->
-				<div class="carousel-cell"><img class="w3-round-large "
-				src="static/images/image8.png" style="width: 375; height:667; margin:0"></div>
-			</div>
-
-	<!-- Wedding information -->
-	<div
-		class="w3-container w3-padding-64 w3-grayscale-min w3-center"
-		id="wedding" style="background-color:#eae5e3; padding-top:30px;">
-		<div class="w3-content">
-			<h1 class="w3-text" style="font-size: 35px;">
-				<b>오시는 길</b>
-			</h1>
-			<div id="map" class="w3-round-large" style="width:100%;height:400px;"></div>
-			<!-- <img class="w3-round-large w3-grayscale-min"
-				src="/images/image13.png" style="width: 100%; margin: 64px 0"> -->
-			<div class="w3-row">
-				<div class="w3-half">
-					<h2></h2>
-					<p>더 발렌티 청담</p>
-					<p>2018년 9월 29일 토요일 오전 11시</p>
+		<!-- 사진 영역 -->
+		<div class="gallery_area" style="background-color:white">
+			<div class="carousel js-flickity flickity-enabled is-draggable" data-flickity='{ "imagesLoaded": true, "contain": true}'>
+				<div class="carousel-cell">
+					<img src="static/images/image10.png" style="width: 375; height:667; margin:0">
 				</div>
-				<div class="w3-half">
-					<h2>Where</h2>
-					<p>The Valenti</p>
-					<p>청담역 4번출구 (걸어서 5분)</p>
+				<div class="carousel-cell">
+					<img src="static/images/image1.png" style="width: 375; height:667; margin:0">
+				</div>
+				<div class="carousel-cell">
+					<img src="static/images/image2.png" style="width: 375; height:667; margin:0">
+				</div>
+				<div class="carousel-cell">
+					<img src="static/images/image3.png" style="width: 375; height:667; margin:0">
+				</div>
+				<div class="carousel-cell">
+					<img src="static/images/image4.png" style="width: 375; height:667; margin:0">
+				</div>
+				<div class="carousel-cell">
+					<img src="static/images/image5.png" style="width: 375; height:667; margin:0">
+				</div>
+				<div class="carousel-cell">
+					<img src="static/images/image6.png" style="width: 375; height:667; margin:0">
+				</div>
+				<div class="carousel-cell">
+					<img src="static/images/image8.png" style="width: 375; height:667; margin:0">
 				</div>
 			</div>
 		</div>
-	</div>
-	
-	
-	<!-- map -->
-	<!-- <div id="map" class="w3-round-large" style="width:100%;height:400px;"></div> -->
 
 
-	<!-- RSVP section
-	<div class="w3-container w3-padding-64 w3-pale-red w3-center w3-wide"
-		id="rsvp">
-		<h1>HOPE YOU CAN MAKE IT!</h1>
-		<p class="w3-large">Kindly Respond By September, 2018</p>
-		<p class="w3-xlarge">
-			<button
-				onclick="document.getElementById('id01').style.display='block'"
-				class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off"
-				style="padding: 8px 60px">Invitation</button>
-		</p>
-	</div> -->
+		<!-- 확대보기 영역 시작 -->
+		<div id="gallery" class="zoom_area" onclick="location.href='./gallery.html'" style="padding-top:20px; padding-bottom:20px;">
+			<span>더 많은 사진 보기 click!</span>
+		</div>
+		<!-- //확대보기 영역 끝 -->
 
-	<!-- RSVP modal
-	<div id="id01" class="w3-modal">
-		<div class="w3-modal-content w3-card-4 w3-animate-zoom"
-			style="padding: 32px; max-width: 600px">
-			<div class="w3-container w3-white w3-center">
-				<h1 class="w3-wide">CAN YOU COME?</h1>
-				<p>We really hope you can make it.</p>
-				<form action="attendCheck" method="POST">
-					<input class="w3-input w3-border" type="text" placeholder="Name(s)"
-						name="fullName">
 
-					<p>
-						<i>Sincerely, Sojung & Woojae</i>
-					</p>
-					<div class="w3-row">
-						<div class="w3-half">
-							<button onclick="change_attend_check();" type="submit"
-								class="w3-button w3-block w3-green">Going</button>
+		<!-- 주소 영역 시작 -->
+		<div class="location_area">
+			<div id="wedding" style="background-color:#f6f6f6; padding-top:30px;">
+				<div>
+					<div id="map" style="width:100%;height:400px;"></div>
+					<div style="padding-bottom:1px;"> 
+						<div>
+							<h5 style="color:dimgray">하트를 클릭하면 네이버 지도로 연결됩니다.</h5>
 						</div>
-						<div class="w3-half">
-							<button
-								onclick="document.getElementById('id01').style.display='none'"
-								type="submit" class="attend-button w3-button w3-block w3-red">Can't
-								come</button>
+						<div style="text-align:left; padding:10px;">
+							<h3>서울시 영동대로</h3>
+							<h5>02-9920-2029</h3>
+							<h3>주차</h3>
+							<h3>지하철</h3>
+							<h3>버스</h3>
+							<h3>청담역 4번출구 (걸어서 5분)</h3>
 						</div>
-						<input id="attend-check" type="hidden" value="false"
-							name="attendance" />
+						<div>
+							<h5 style="color:dimgray">화환은 정중히 사양합니다.</h5>
+						</div>
 					</div>
-				</form>
+				</div>
 			</div>
 		</div>
-	</div> -->
+		<!-- //주소 영역 끝 -->
 
-	<!-- Footer -->
-	<footer class="w3-center w3-black w3-padding-16" style="background-color:white;">
-	<p>
-		made by 이우재
-	</p>
-	</footer>
-	<div class="w3-hide-small" style="margin-bottom: 32px;"></div>
-	
-	<script type="text/javascript" src="static/js/wedweb.js"></script>
-	<script src="https://npmcdn.com/flickity@1.2/dist/flickity.pkgd.min.js"></script>
-	<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=uhgq9fEi4H1JjfBzimZW&submodules=geocoder"></script>
+		<div style="height:50px; line-height:50px;">
+			made by 이우재
+		</div>
+		<script type="text/javascript" src="static/js/wedweb.js"></script>
+		<script src="https://npmcdn.com/flickity@1.2/dist/flickity.pkgd.min.js"></script>
+		<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=uhgq9fEi4H1JjfBzimZW&submodules=geocoder"></script>
 </body>
+
 </html>

@@ -1,7 +1,4 @@
-/**
- * 
- */
-
+document.addEventListener("DOMContentLoaded", function(event) { 
 
 	var countDownDate = new Date("September 29, 2018 11:00:00").getTime();
 
@@ -49,4 +46,5 @@
 	// 	content: '<div style="width:150px;text-align:center;padding:10px; ">THE VALENTI</div>',	
 	// });
 
-	// infowindow.open(map, marker);		
+	// infowindow.open(map, marker);	
+});	

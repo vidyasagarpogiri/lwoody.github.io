@@ -1,7 +1,7 @@
 /**
  * 
  */
-$(document).ready(function () {
+
 
 	var countDownDate = new Date("September 29, 2018 11:00:00").getTime();
 
@@ -50,4 +50,3 @@ $(document).ready(function () {
 	// });
 
 	// infowindow.open(map, marker);		
-});

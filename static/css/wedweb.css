@@ -1,7 +1,73 @@
 @charset "UTF-8";
 
+html,body {
+			margin: 0;
+			padding: 0;
+			font-weight: lighter;
+}
+
+
+h2,h3,h4 {
+			font-weight: lighter;
+		}
+
+		img {
+			display: block;
+			border: 0;
+		}
+
+		.wrap {
+			width: 100%;
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		.about_area {}
+
+		.about_area img {
+			width: 100%;
+			height: auto;
+		}
+
+		.gallery_area {}
+
+		.gallery_area img {
+			width: 100%;
+			height: auto;
+		}
+
+		.zoom_area {}
+
+		.zoom_area a {
+			display: block;
+		}
+
+		.zoom_area a img {
+			width: 100%;
+			height: auto;
+		}
+
+		.reabout_area {}
+
+		.reabout_area img {
+			width: 100%;
+			height: auto;
+		}
+
+		.location_area {}
+
+		.location_area img {
+			width: 100%;
+			height: auto;
+		}
+
 body, h1, h2 {
 	font-family: 'ApenFont';
+}
+
+@font-face{
+	font-family: 'ApenFont';
+  src: url('../apen.ttf');
 }
 
 body, html {
@@ -31,11 +97,6 @@ p {
 	box-sizing: border-box;
 }
 
-body {
-	font-family: 'ApenFont';
-}
-
-
 html { overflow-y: scroll; }
 
 .carousel {
@@ -53,7 +114,78 @@ html { overflow-y: scroll; }
 
 .flickity-page-dots { bottom: 10px; }
 
-@font-face{
-	font-family: 'ApenFont';
-  src: url('../apen.ttf');
+.card {
+	box-sizing: border-box;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	width: 100%;
+	float: left;
+}
+
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container-left {
+	width: 100%;
+	float: left;
+	line-height: auto;
+}
+
+.container-right {
+	width: 100%;
+	float: left;
+	line-height: auto;
+}
+
+
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="checkbox"]:checked + label,
+[type="checkbox"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+[type="checkbox"]:checked + label:before,
+[type="checkbox"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+}
+[type="checkbox"]:checked + label:after,
+[type="checkbox"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #FF0707;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
 }

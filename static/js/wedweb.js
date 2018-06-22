@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(event) { 
+document.addEventListener("DOMContentLoaded", function (event) {
 
 	var countDownDate = new Date("September 29, 2018 11:00:00").getTime();
 
@@ -7,17 +7,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 		var distance = countDownDate - now;
 
-		var d = Math.floor(distance / (1000 * 60 * 60 * 24)); 
-		var h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)); 
-		var m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)); 
+		var d = Math.floor(distance / (1000 * 60 * 60 * 24));
+		var h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		var m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 		var s = Math.floor((distance % (1000 * 60)) / 1000);
 
-		document.getElementById("d_day").innerHTML = "D - " + d +"일 " + h + "시간 " + m + "분 " + s + "초";
-	});
+		document.getElementById("d_day").innerHTML = "D - " + d + "일 " + h + "시간 " + m + "분 " + s + "초";
+	}, 1000);
 
 	var mapOptions = {
 		center: new naver.maps.LatLng(37.5230775, 127.0560914),
-		zoom: 12
+		zoom: 12,
+		draggable: true,
+		pinchZoom: true,
+		scrollWheel: false,
 	};
 
 
@@ -42,9 +45,29 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		window.open(url);
 	});
 
-	// var infowindow = new naver.maps.InfoWindow({
-	// 	content: '<div style="width:150px;text-align:center;padding:10px; ">THE VALENTI</div>',	
-	// });
-
-	// infowindow.open(map, marker);	
+	//quiz checkbox setting
+	var checkboxes = document.getElementsByName("checkbox-group");
+	var answerIndex = 0,
+		lastIndex = 3;
+	checkboxes.forEach((item) => {
+		item.checked = false;
+		item.addEventListener("click", function () {
+			checkboxes.forEach((item) => {
+				if (item !== this) item.checked = false;
+			
+				var answerDom = document.getElementsByClassName("_answer")[answerIndex];
+				if (answerIndex != lastIndex && this == answerDom) {
+					var label = answerDom.nextSibling.nextSibling.innerHTML;
+					var checkBoardDom = document.getElementsByClassName("check-board")[answerIndex];
+					checkBoardDom.style.display = "none";
+					checkBoardDom.parentElement.append(label);
+					checkBoardDom.parentElement.appendChild(document.createElement('br'));
+					checkBoardDom.parentElement.appendChild(document.createElement('br'));
+					answerIndex++;
+					var nextCardId = "quiz_" + answerIndex;
+					document.getElementById(nextCardId).style.display = "block";
+				}
+			});
+		});
+	});
 });	

@@ -126,18 +126,31 @@ html { overflow-y: scroll; }
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.container-left {
+.container {
 	width: 100%;
 	float: left;
 	line-height: auto;
 }
 
-.container-right {
-	width: 100%;
-	float: left;
-	line-height: auto;
+.container-inside{
+	position: relative;
+	text-align: center;
+	color : white;
 }
 
+.container img{
+	width: 100%;
+	/* opacity: 0.7; */
+}
+
+.container-inside .gift-text {
+    position: absolute;
+    top: 92%;
+    left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	font-size: 12px;
+}
 
 [type="checkbox"]:checked,
 [type="checkbox"]:not(:checked) {

@@ -56,6 +56,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 				if (item !== this) item.checked = false;
 			
 				var answerDom = document.getElementsByClassName("_answer")[answerIndex];
+
 				if (answerIndex != lastIndex && this == answerDom) {
 					var label = answerDom.nextSibling.nextSibling.innerHTML;
 					var checkBoardDom = document.getElementsByClassName("check-board")[answerIndex];
@@ -66,6 +67,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
 					answerIndex++;
 					var nextCardId = "quiz_" + answerIndex;
 					document.getElementById(nextCardId).style.display = "block";
+				} else if(answerIndex != lastIndex && this != answerDom){
+					this.nextSibling.nextSibling.innerHTML = "<span style='font-color:red;'>땡!</span>"
 				}
 			});
 		});
